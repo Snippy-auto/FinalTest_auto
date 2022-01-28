@@ -118,3 +118,4 @@ class TestUserAddToBasketFromProductPage:
         product_page.sould_be_correct_name_product_on_massage_and_link()
         product_page.sould_be_correct_prace_product_on_massage_and_link()
         
+        
