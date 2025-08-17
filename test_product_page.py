@@ -18,8 +18,8 @@ def test_click_add_to_basket_button(browser):
     product_page.should_be_button_add_to_basket()
     product_page.should_be_button_add_to_basket_click()
     product_page.solve_quiz_and_get_code()
-    product_page.sould_be_correct_name_product_on_massage_and_link()
-    product_page.sould_be_correct_prace_product_on_massage_and_link()
+    product_page.should_be_correct_name_product_on_massage_and_link()
+    product_page.should_be_correct_prace_product_on_massage_and_link()
 
 @pytest.mark.parametrize('link', ["http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer1",
@@ -117,3 +117,5 @@ class TestUserAddToBasketFromProductPage:
         product_page.should_be_button_add_to_basket_click()
         product_page.should_be_correct_name_product_on_massage_and_link()
         product_page.should_be_correct_prace_product_on_massage_and_link()
+        
+        
