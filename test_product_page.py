@@ -38,8 +38,8 @@ def test_guest_can_add_product_to_basket(browser, link):
     product_page.should_be_button_add_to_basket()
     product_page.should_be_button_add_to_basket_click()
     product_page.solve_quiz_and_get_code()
-    product_page.sould_be_correct_name_product_on_massage_and_link()
-    product_page.sould_be_correct_prace_product_on_massage_and_link()
+    product_page.should_be_correct_name_product_on_massage_and_link()
+    product_page.should_be_correct_prace_product_on_massage_and_link()
 
 @pytest.mark.xfail
 def test_guest_cant_see_success_message_after_adding_product_to_basket(browser):
@@ -115,7 +115,5 @@ class TestUserAddToBasketFromProductPage:
         product_page.open()
         product_page.should_be_button_add_to_basket()
         product_page.should_be_button_add_to_basket_click()
-        product_page.sould_be_correct_name_product_on_massage_and_link()
-        product_page.sould_be_correct_prace_product_on_massage_and_link()
-        
-        
+        product_page.should_be_correct_name_product_on_massage_and_link()
+        product_page.should_be_correct_prace_product_on_massage_and_link()
