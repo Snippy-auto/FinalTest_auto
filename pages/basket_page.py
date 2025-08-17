@@ -7,5 +7,4 @@ class BasketPage(BasePage):
         assert self.is_not_element_present(*BasketPageLocators.GOODS_IN_BASKET)
     
     def should_be_basket_is_empty(self):
-    	assert self.browser.find_element(*BasketPageLocators.YOUR_BASKET_EMPTY).text == "Your basket is empty. " \
-                                                                                          "Continue shopping"
+    	assert self.browser.find_element(*BasketPageLocators.YOUR_BASKET_EMPTY).text == "Your basket is empty. " \ "Continue shopping"
