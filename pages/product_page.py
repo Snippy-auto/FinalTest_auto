@@ -29,12 +29,11 @@ class ProductPage(BasePage):
         except NoAlertPresentException:
             print("No second alert presented")
     
-    def sould_be_correct_name_product_on_massage_and_link(self):
+    def should_be_correct_name_product_on_massage_and_link(self):
         assert self.browser.find_element(*ProductPageLocators.NAME_PRODUCT).text == self.browser.find_element(*ProductPageLocators.NAME_PRODUCT_IN_ALERT).text, "The name of the product in the basket does not match the real price of the product!"
 
-    def sould_be_correct_prace_product_on_massage_and_link(self):
+    def should_be_correct_prace_product_on_massage_and_link(self):
         assert self.browser.find_element(*ProductPageLocators.PRICE_PRODUCT).text == self.browser.find_element(*ProductPageLocators.PRICE_PRODUCT_IN_ALERT).text, "The price of the product in the basket does not match the real price of the product!"
-
 
     def should_not_be_success_message(self):
         assert self.is_not_element_present(*ProductPageLocators.NAME_PRODUCT_IN_ALERT), \
