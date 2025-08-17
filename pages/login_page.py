@@ -28,4 +28,3 @@ class LoginPage(BasePage):
         password2.send_keys(password)
         button = self.browser.find_element(*LoginPageLocators.BUTTON_REG)
         button.click()
-
